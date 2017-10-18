@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 module.exports = mongoose.model('heartbeat', {
-	capture : String,
+	parameter : String,
 	date : String,
 	value : String
 });

@@ -20,7 +20,7 @@ module.exports = function(app) {
 	// create heartbeats and send back all pictures after creation
 	app.post('/api/heartbeats', function(req, res) {
 
-		// create a picture, information comes from AJAX request from Angular
+		// create a heartbeeet, information comes from AJAX request from Angular
 		Heartbeat.create({
 			parameter : req.body.parameter,
 			date : req.body.date,
