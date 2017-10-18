@@ -13,7 +13,7 @@ Node application is designed to run on a ubuntu server.
 ## Requirements ##
 
 - [Node and npm](http://nodejs.org)
-- [MongoDB] (https://www.mongodb.com)
+- [MongoDB](https://www.mongodb.com)
 
 ## Installation (Local) ##
 
@@ -31,10 +31,10 @@ Node application is designed to run on a ubuntu server.
 ## API ##
 
 Receive data to /api/heartbeats
-#GET: http://localhost:8060/api/heartbeats
+- GET: http://localhost:8060/api/heartbeats
 
 Send data to /api/heartbeats
-#POST: http://localhost:8060/api/heartbeats
+- POST: http://localhost:8060/api/heartbeats
 
 
 
