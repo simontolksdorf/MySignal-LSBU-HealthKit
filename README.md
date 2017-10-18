@@ -17,7 +17,7 @@ Node application is designed to run on a ubuntu server.
 
 ## Installation (Local) ##
 
-1. Clone the repository: `git clone git@github.com:scotch-io/node-todo`
+1. Clone the repository: `git clone git@github.com:simontolksdorf/MySignal-LSBU-HealthKit.git`
 2. Install the application: `npm install`
 3. Start MongoDb Database: `mongo`
 4. Insert sample Data (from sampleData.json): `mongoimport -d heartbeat -c heartbeats --type json --file sampleData.json --jsonArray`
