@@ -1,5 +1,5 @@
-{
-  "name": "LSBU Health Server",
+{ 
+  "name": "LSBUHealthServer",
   "version": "0.0.1",
   "description": "MySignal - LSBU Health Server",
   "main": "server.js",
