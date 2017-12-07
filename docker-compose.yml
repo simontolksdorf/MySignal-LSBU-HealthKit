@@ -1,0 +1,19 @@
+version: '2'
+services:
+  mongodb:
+    image: mongo
+    volumes: 
+      - /tmp/mongo:/data/db
+    ports:
+      - 27017
+
+  web: 
+    build: ./
+    ports:
+      - 8060
+    environment:
+      - MONGO_URL=mongodb://db/mysignal
+    links:
+      - mongodb
+    depends_on: 
+      - mongodb

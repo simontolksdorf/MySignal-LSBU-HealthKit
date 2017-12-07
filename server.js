@@ -11,7 +11,7 @@ var cors = require('cors');
 
 
 // configuration ===============================================================
-mongoose.connect(database.url); 	// connect to mongoDB database 
+mongoose.connect(process.env.MONGO_URL || database.url); 	// connect to mongoDB database 
 
 app.use(express.static(__dirname + '/public')); 				
 app.use(morgan('dev')); 										// log every request to the console
