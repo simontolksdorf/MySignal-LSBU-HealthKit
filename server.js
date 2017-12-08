@@ -12,7 +12,7 @@ var cors = require('cors');
 
 // configuration ===============================================================
 mongoose.connect(process.env.MONGO_URL || database.url); 	// connect to mongoDB database 
-
+//mongoose.connect('mongodb://mongodb:27017');
 app.use(express.static(__dirname + '/public')); 				
 app.use(morgan('dev')); 										// log every request to the console
 app.use(bodyParser.urlencoded({'extended':'true'})); 			// parse application/x-www-form-urlencoded
@@ -26,6 +26,4 @@ require('./app/routes.js')(app);
 
 // listen (start app with node server.js) ======================================
 app.listen(port);
-console.log("App listening on port " + port);
-
-
+console.log("App listening on port " + port + "(Port 80 with running container)");
