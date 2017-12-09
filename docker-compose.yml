@@ -1,19 +1,17 @@
-version: '2'
-services:
-  mongodb:
-    image: mongo
-    volumes: 
-      - /tmp/mongo:/data/db
-    ports:
-      - 27017
+version: "2"
 
-  web: 
-    build: ./
+services:
+
+  web:
+    build: .
     ports:
-      - 8060
-    environment:
-      - MONGO_URL=mongodb://db/mysignal
+      - "80:8060"
     links:
-      - mongodb
-    depends_on: 
-      - mongodb
+      - mongo
+    # environment:
+    #   - MONGO_URL=mongodb://mongo:27017/heartbeat
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
